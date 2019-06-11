@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>SIMPLE CALCULATOR</title>
+</head>
+<script language="Javascript">
+function add()
+{
+var a,b,c;
+a=parseInt(document.frm.txtnum1.value);
+b=parseInt(document.frm.txtnum2.value);
+c=a+b;
+document.frm.txtres.value=c;
+}
+function sub()
+{
+var a,b,c;
+a=parseInt(document.frm.txtnum1.value);
+b=parseInt(document.frm.txtnum2.value);
+c=a-b;
+document.frm.txtres.value=c;
+}
+function mul()
+{
+var a,b,c;
+a=parseInt(document.frm.txtnum1.value);
+b=parseInt(document.frm.txtnum2.value);
+c=a*b;
+document.frm.txtres.value=c;
+}
+function div()
+{
+var a,b,c;
+a=parseInt(document.frm.txtnum1.value);
+b=parseInt(document.frm.txtnum2.value);
+c=a/b;
+document.frm.txtres.value=c;
+}
+function mod()
+{
+var a,b,c;
+a=parseInt(document.frm.txtnum1.value);
+b=parseInt(document.frm.txtnum2.value);
+c=a%b;
+document.frm.txtres.value=c;
+}
+</script><body bgcolor="yellow"><br><hr><center><font face="cursive" color="red" size="20">Simple Calculator</font><hr>
+<form name="frm"><br><br>
+<font size="5" face="cursive" color="red"><br>
+Enter a value 1&nbsp;&nbsp;
+<input type="text" name="txtnum1"><br><br><br>
+Enter a value 2&nbsp;&nbsp;
+<input type="text" name="txtnum2"><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click a button&nbsp;&nbsp;&nbsp;
+<input type="button" name="cmdadd" value="+" onclick="add()">
+<input type="button" name="cmdsub" value="-" onclick="sub()">
+<input type="button" name="cmdmul" value="*" onclick="mul()">
+<input type="button" name="cmddiv" value="/" onclick="div()">
+<input type="button" name="cmdmod" value="%" onclick="mod()">
+<br><br><br>
+The Result is&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="txtres">
+</font><br><br><br><br><hr>
+</form></center>
+</html>
+
+

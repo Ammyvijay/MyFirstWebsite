@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Mouse Events
+</title>
+<Script language="JavaScript">
+function change1()
+{
+document.frm.img1.src="rabbit.gif";
+}
+function change2()
+{
+document.frm.img1.src="cow.gif";
+}
+function change3()
+{
+document.frm.img1.src="one.gif";
+}
+</Script>
+</head>
+<form name="frm">
+<img src="rabbit.gif" name="img1"
+height="100" width="100"
+alt="Sorry: The image is not displayed"
+onMouseOver="change2()"
+onDblClick="change3()">
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body
+{
+  font: 600 14px/24px Aerial;
+  margin: 0px;
+}
+.card-container {
+  cursor: pointer;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 19);
+  position: relative;
+  width: 100%;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 3px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: red;
+  line-height: 50px;
+  text-align: center;
+  transform: rotateY(270deg);
+}
